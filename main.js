@@ -45,15 +45,18 @@ const pessoas = [
 
 
 var cards = ""
+
+const empty = ""
+
 const dad = document.querySelector('#dad')
 
 pessoas.forEach(pessoa =>{
     cards += `
-    <div class="card m-2 p-4">
+    <div class="cardd m-2 p-4">
             <img class="rounded-circle" src="${pessoa.avatar}" alt="">
-            <div class="listOne">
-                <p>${pessoa.first_name}</p>
-                <p>${pessoa.last_name}</p>
+            <div class="listOne mt-2">
+                <p class="">${pessoa.first_name}</p>
+                <p class="pl-1">${pessoa.last_name}</p>
             </div>
             <p>${pessoa.email}</p>
         </div>
