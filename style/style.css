@@ -29,9 +29,14 @@ main{
     width: 300px;
     background-color: transparent;
     box-shadow: #000 1px 1px 1px;
+    
 }
 .listOne{
     display: flex;
+}
+h1{
+    padding-top: 280px;
+    font-family: 'Anton', sans-serif;
 }
 p{
     font-weight: bold;
