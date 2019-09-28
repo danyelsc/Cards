@@ -6,12 +6,12 @@
 body {
     display: flex;
     justify-content: center;
-    /* background-image: url("http://www.momentum-ba.com.br/img/background2.jpg");
+    background-image: url("https://hotmart.s3.amazonaws.com/background_images/063dca77-fe57-4ef1-b44f-188c3c7f7abf/BACKGROUND.png");
     background-position: center;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: auto; */
-    background-color: #474665;
+    height: auto;
+   
 
 }
 
@@ -51,5 +51,12 @@ h1{
 p{
     font-weight: bold;
     font-size: 18px;
+}
+
+@media screen and (max-width:663px){
+    body{
+        background-position: auto;
+        background-size: cover;
+    }
 }
 
