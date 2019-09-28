@@ -46,8 +46,6 @@ const pessoas = [
 
 var cards = ""
 
-const empty = ""
-
 const dad = document.querySelector('#dad')
 
 pessoas.forEach(pessoa =>{
@@ -62,6 +60,7 @@ pessoas.forEach(pessoa =>{
         </div>
     `
 })
+
 
 dad.innerHTML = cards
 
