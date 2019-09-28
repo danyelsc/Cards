@@ -45,8 +45,28 @@ const pessoas = [
 
 
 var cards = ""
+let lista = pessoas
 
 const dad = document.querySelector('#dad')
+
+
+const listNew = lista.map(pessoa =>{
+    return {
+        ...pessoa,
+        full_name: pessoa.first_name + " " + pessoa.last_name
+    }
+})
+
+const listFilter = lista.filter(pessoa =>{
+    let test = false
+    if(pessoa.id > 9){
+        test = true
+    }
+    return test
+})
+
+console.log(listNew)
+
 
 pessoas.forEach(pessoa =>{
     cards += `
