@@ -6,12 +6,23 @@
 body {
     display: flex;
     justify-content: center;
-    background-image: url("https://hotmart.s3.amazonaws.com/background_images/063dca77-fe57-4ef1-b44f-188c3c7f7abf/BACKGROUND.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-black-creative-technology-background-design-backgroundtechnology-backgroundtechnologycreative-backgroundtechnical-image_66625.jpg");
     height: auto;
+    margin: 10px;
+    background-color:  #EEEEEE;
+}
 
+input{
+    text-align: center;
+    width: 40%;
+    border: solid 2px rgba(255, 255, 255, 0.246);
+    border-radius: 2%;
+    box-shadow: #000 1px 1px 1px;
+    background-color: #1516168f; 
+    height: 50px;
+    color: #fff;
 }
 
 main{
@@ -21,7 +32,6 @@ main{
     justify-content: center;
     width: 100vw;
     max-width: 960px;
-
     
 }
 
@@ -30,10 +40,10 @@ main{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: solid 1px rgba(0, 0, 0, 0.185);
+    border: solid 2px rgba(255, 255, 255, 0.246);
     border-radius: 2%;
-    width: 300px;
-    background-color: transparent;
+    width: 240px;
+    background-color: #1516168f;
     box-shadow: #000 1px 1px 1px;
     
 }
@@ -42,21 +52,10 @@ main{
     display: flex;
 }
 
-h1{
-    padding-top: 280px;
-    font-family: 'Anton', sans-serif;
-}
-
 p{
     font-weight: bold;
-    /* color: #fff; */
-    font-size: 18px;
+    color: #fff;
+    font-size: 16px;
 }
 
-@media screen and (max-width:663px){
-    body{
-        background-position: auto;
-        background-size: cover;
-    }
-}
 

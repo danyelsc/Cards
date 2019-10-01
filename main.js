@@ -47,8 +47,10 @@ const pessoas = [
 var cards = ""
 let lista = pessoas
 
-const dad = document.querySelector('#dad')
 
+
+
+// Tipo de loop MAP
 
 const listNew = lista.map(pessoa =>{
     return {
@@ -57,20 +59,30 @@ const listNew = lista.map(pessoa =>{
     }
 })
 
+// Atividade com filtro
+
 const listFilter = lista.filter(pessoa =>{
     let test = false
     if(pessoa.id > 9){
         test = true
     }
+
     return test
 })
 
-console.log(listNew)
+console.log(listNew, listFilter)
 
+const dad = document.querySelector('#dad');
 
-pessoas.forEach(pessoa =>{
-    cards += `
-    <div class="cardd m-2 p-4">
+function montarLista(filtro){
+    let text = "";
+
+    lista.forEach(pessoa => {
+        const verificaFiltro =!filtro || pessoa.first_name.toUpperCase().includes(filtro.toUpperCase())
+        console.log("chegou!!!",verificaFiltro,  filtro)
+        
+        text += verificaFiltro ? `
+        <div class="cardd m-2 p-4">
             <img class="rounded-circle" src="${pessoa.avatar}" alt="">
             <div class="listOne mt-2">
                 <p class="">${pessoa.first_name}</p>
@@ -78,11 +90,15 @@ pessoas.forEach(pessoa =>{
             </div>
             <p>${pessoa.email}</p>
         </div>
-    `
-})
+        `: " "
+        dad.innerHTML = text
+    });
+
+}
+
+montarLista()
 
 
-dad.innerHTML = cards
 
 
 
